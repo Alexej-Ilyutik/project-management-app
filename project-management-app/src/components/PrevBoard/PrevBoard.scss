@@ -1,0 +1,12 @@
+.prevboard {
+  width: 100%;
+  min-height: 8rem;
+  cursor: pointer;
+  .prevboard__header {
+    transition: 0.4s;
+    color: var(--primary);
+    &:hover {
+      color: var(--header-bg);
+    }
+  }
+}

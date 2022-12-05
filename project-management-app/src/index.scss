@@ -1,0 +1,72 @@
+:root {
+  --bg-color: #fee2b3;
+  --bg-second: #fbedd2;
+  --main-blue: #1f459f;
+  --scrollbar: #9dccdfc3;
+  --secondary-color: rgba(255, 255, 255, 0.85);
+  --text-color: #ffffff;
+  --nav-color: rgba(255, 255, 255, 0.65);
+  --footer-bg: #519bbe;
+  --header-bg: #297395;
+  --header-dark-bg: #0f4964;
+  --buttons-color: #fdbc0c;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+  background-color: var(--scrollbar);
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: var(--header-bg);
+  box-shadow: inset 1px 1px 8px #f3faf7;
+  border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--header-dark-bg);
+}
+
+/* Стрелки */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+  background: linear-gradient(120deg, var(--header-dark-bg) 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(240deg, var(--header-dark-bg) 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(0deg, var(--header-dark-bg) 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: var(--scrollbar);
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+  background: linear-gradient(300deg, var(--header-dark-bg) 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(60deg, var(--header-dark-bg) 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(180deg, var(--header-dark-bg) 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: var(--scrollbar);
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    background:
+        linear-gradient(210deg, var(--header-dark-bg) 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(330deg, var(--header-dark-bg) 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(90deg, var(--header-dark-bg) 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: var(--scrollbar);
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    background:
+        linear-gradient(30deg, var(--header-dark-bg) 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(150deg, var(--header-dark-bg) 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(270deg, var(--header-dark-bg) 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: var(--scrollbar);
+}

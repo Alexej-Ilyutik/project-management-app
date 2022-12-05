@@ -1,0 +1,9 @@
+.modal__window {
+  color: var(--header-dark-bg);
+}
+
+.modal-dialog .modal-content {
+  border-radius: .5rem;
+  border: 0.2rem solid var(--info);
+  margin-bottom: 10rem;
+}

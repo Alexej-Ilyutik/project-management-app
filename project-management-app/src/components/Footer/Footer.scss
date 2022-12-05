@@ -1,0 +1,33 @@
+.footer__content-rs {
+  .rs-logo {
+    background: url(../../assets/rs_school_js.svg) 50% / contain no-repeat;
+    display: block;
+    font-size: 0;
+    height: 40px;
+    margin: auto;
+    width: 80px;
+  }
+}
+
+.footer__content-github {
+  gap: 1rem;
+  .github-logo {
+    color: var(--bs-white);
+    display: inline-block;
+    position: relative;
+    transition: .3s;
+    &:hover {
+      &::after {
+        content: attr(data-title);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 2.1rem;
+        z-index: 1;
+        text-align: center;
+        font-size: 0.8rem;
+        border: none;
+      }
+    }
+  }
+}

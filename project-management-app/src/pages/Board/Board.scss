@@ -1,0 +1,17 @@
+.board__container {
+  overflow-x: auto;
+  gap: 1.5rem;
+  height: calc(100vh - 17rem);
+  .card-btn {
+    max-height: 3.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background: var(--secondary-color);
+    }
+    .card-btn__title {
+      color: var(--header-dark-bg);
+      text-align: center;
+    }
+  }
+}

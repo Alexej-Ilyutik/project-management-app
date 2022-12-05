@@ -1,0 +1,57 @@
+.team-boxed {
+  .item {
+    text-align: center;
+    .box {
+      text-align: center;
+      padding: 30px;
+      background-color: var(--secondary-color);
+      min-height: 25rem;
+      max-width: 18rem;
+      border-radius: 0.3rem;
+      margin: 0 auto 3rem auto;
+      img {
+        box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+      }
+      a {
+        color: var(--header-dark-bg);
+      }
+    }
+    .name {
+      font-weight: bold;
+      margin-top: 28px;
+      margin-bottom: 8px;
+    }
+    .title {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: var(--header-dark-bg);
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+    .description {
+      font-size: 15px;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+    img {
+      max-width: 160px;
+    }
+  }
+  .social {
+    font-size: 18px;
+    color: var(--bs-gray);
+    a {
+      color: inherit;
+      margin: 0 10px;
+      display: inline-block;
+      opacity: 0.7;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.description-link {
+  font-size: 20px;
+}
